@@ -7,7 +7,7 @@ end
 
 def match(find_anagram_in_this_string) 
     puts "Must find #{self.word} inside the following string: #{find_anagram_in_this_string}"
-    find_anagram_in_this_string.find_all do |word| 
+    find_anagram_in_this_string.find_all do |words| 
       if word.split("").sort == self.word.split("").sort 
         word 
       end
